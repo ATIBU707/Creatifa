@@ -1,0 +1,287 @@
+/* Universal reset for padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+    color: rgb(100, 75, 75);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(100, 75, 75);
+  
+}
+
+/* Style for the left navbar items */
+/* Ensure navbar items are relative to show submenu */
+.navbar-left {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    position: relative; /* Positioning context for submenu */
+    justify-content: flex-end;
+}
+
+.navbar-left li {
+    position: relative;
+    padding: 14px;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(100, 75, 75);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 9999; /* Ensures it's above other content */
+}
+
+/* Services submenu */
+.services:hover .submenu {
+    display: block;
+    z-index: 9999; /* Ensure submenu appears above slideshow */
+}
+
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Align CRF to the far left */
+.navbar-left-crf {
+    display: flex;
+    justify-content: flex-start; /* Align CRF to the left */
+    margin-right: auto; /* Push the 'Log In' link to the far right */
+}
+
+.navbar-left-crf li {
+    list-style: none;
+}
+
+.navbar-left-crf li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px; 
+    font-size: 40px;
+}
+
+.navbar-left-crf li img{
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+}
+
+/* Align Log In to the far right */
+.navbar-right {
+    display: flex;
+    justify-content: flex-end; /* Align Log In to the right */
+}
+
+.navbar-right li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar-right li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+}
+
+/* Slideshow container */
+.mySlides {
+    position: relative;
+    display: none; /* Hide all slides by default */
+}
+
+/* Caption text style */
+.text {
+    position: absolute;
+    bottom: 40px;  /* Adjust the bottom to give space for the dots */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 27px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    padding: 10px;
+    text-align: center;
+    z-index: 1; /* Make sure caption is above the image */
+    width: 100%;
+}
+
+/* Slide images */
+.mySlides img {
+    width: 100%;
+    height: 560px;
+}
+
+/* Dots container */
+/* Dots */
+.dot-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color:rgb(100, 75, 75);
+}
+
+
+/* Main section container */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 80%; /* Adjust to your liking */
+    margin: 50px auto;
+    border: 2px solid #000; /* Adding border */
+    width: 80vw; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+  /* Left section (text) */
+.left-section {
+    width: 50%;
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+  /* Right section (image) */
+.right-section img {
+    width: 100%;  /* Adjust width as needed */
+    max-width: 500px; /* Optional: Limit the maximum width of the image */
+    height: auto;
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px green;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+  /* Keyframe animation to slide the section up */
+@keyframes slideUp {
+    0% {
+    transform: translateY(50px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+  /* Adding scroll effect */
+.main-section.scrolled {
+    animation: slideUp 1s forwards;
+}
+
+
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color:rgb(100, 75, 75) ; /* Dark background for footer */
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(100, 75, 75);
+    color: white;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
