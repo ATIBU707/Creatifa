@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Creatifa
+    </title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.webp">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header section -->
+    <nav class="navbar">
+        <div class="navbar-left-crf">
+            <ul class="navbar-logo">
+                <li>
+                    <img src="../images/logo.webp" alt="creatifa" style="margin: 5px 10px 0 10px;">
+                </li>
+                <li>
+                    <h3>Creatifa</h3>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="services">
+                <a href="#">Services</a>
+                <ul class="submenu">
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Craft</a></li>
+                    <li><a href="#"> Sculpture</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <li><a href="#">Log In</a></li>
+        </div>
+    </nav>
+
+<!-- starting of slideshow -->
+<div class="mySlides fade">
+    <img src="../images/ug.jpg" style="width:100%">
+    <div class="text">Embrace the beauty of tradition where every handcrafted piece tells a story of culture, passion, and timeless artistry.</div>
+</div>
+
+<div class="mySlides fade">
+    <img src="../images/cowrie.jpg" style="width:100%">
+    <div class="text">Crafted with care, inspired by heritage, every piece is a reflection of Uganda’s rich artistry and vibrant culture.</div>
+</div>
+
+<div class="mySlides fade">
+    <img src="../images/lady.jpg" style="width:100%">
+    <div class="text">From the heart of Uganda, each creation is a testament to skill, heritage, and the spirit of craftsmanship that endures through generations.</div>
+</div>
+
+<!-- End of slideshow -->
+<!-- Dots container -->
+<div class="dot-container">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<!-- JavaScript for slideshow -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }    
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";  
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change slide every 4 seconds
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+</script>
+
+<h1 id="welcome">Welcome to Creatifa</h1>
+
+<!-- Main Section -->
+<section class="main-section">
+    <div class="left-section">
+    <h2>Creative spirit</h2>
+    <p>Discover the beauty of handcrafted artistry with our one-of-a-kind craft and art products. 
+        Each piece is meticulously designed and made with love, ensuring that no two items are ever alike. 
+        Whether you're looking for a unique statement piece for your home or a heartfelt gift, our collection 
+        is filled with vibrant, original creations that speak to the soul. 
+        Using sustainable, eco-friendly materials, we craft exquisite works that blend timeless elegance with modern charm. 
+        From hand-painted ceramics to intricately woven textiles, our products are a testament to the skill, passion, and 
+        creativity behind every brushstroke and stitch. Add a touch of warmth and originality to your space with art that truly inspires
+    </p>
+    </div>
+    <div class="right-section">
+    <img src="../images/basket.jpg" alt="Image description">
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Learn more about our company</p>
+            <p>Our Vision</p>
+            <p>Our Mission</p>
+            <p>Our values</p>
+        </div>          
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Craft Design</a></li>
+                <li><a href="#">Art Design</a></li>
+                <li><a href="#">Delivery Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: contact@cretifa.com</p>
+            <p>Phone: +123 456 7890</p>
+        
+            <!-- WhatsApp Icon -->
+    <a href="https://wa.me/0751062375" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 24px; color: white;"></i>
+    </a>
+
+    <!-- Facebook Icon -->
+    <a href="https://facebook.com/Creatifa Business" target="_blank">
+        <i class="fab fa-facebook" style="font-size: 24px; color: white;"></i>
+    </a>
+
+    <!-- X (Twitter) Icon -->
+    <a href="https://twitter.com/yourprofile" target="_blank">
+        <i class="fab fa-twitter" style="font-size: 24px; color: white;"></i>
+    </a>
+
+    <!-- Email Icon -->
+    <a href="https://mail.google.com/mail/creatifa@gmail.com">
+        <i class="fas fa-envelope" style="font-size: 24px; color: white;"></i>
+    </a>
+
+        </div>
+    </footer>
+    <hr>
+    <p class="bottom">&copy; 2025 CREATIFA.Co</p>
+</body>
+</html>
