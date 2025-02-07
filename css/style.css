@@ -22,10 +22,18 @@ h1{
 /* Style the navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: rgb(100, 75, 75);
   
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
 }
 
 /* Style for the left navbar items */
