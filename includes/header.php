@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatifa</title>
+    <?php
+    $stylesheets = [
+        'header.css',
+        'footer.css',
+        'index.css',
+        'about.css',
+        'services.css',
+        'contact.css'
+    ];
+
+    foreach ($stylesheets as $stylesheet) {
+        echo '<link rel="stylesheet" href="css/' . $stylesheet . '">' . PHP_EOL;
+    }
+    ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="main-menu">
+            <ul class="main-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Page content starts here -->
+

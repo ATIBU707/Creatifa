@@ -1,0 +1,116 @@
+
+/* Slideshow container */
+.mySlides {
+    position: relative;
+    display: none; /* Hide all slides by default */
+}
+
+/* Caption text style */
+.text {
+    position: absolute;
+    bottom: 40px;  /* Adjust the bottom to give space for the dots */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 27px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    padding: 10px;
+    text-align: center;
+    z-index: 1; /* Make sure caption is above the image */
+    width: 100%;
+}
+
+/* Slide images */
+.mySlides img {
+    width: 100%;
+    height: 560px;
+}
+
+/* Dots container */
+/* Dots */
+.dot-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color:rgb(100, 75, 75);
+}
+
+
+/* Main section container */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 80%; /* Adjust to your liking */
+    margin: 50px auto;
+    border: 2px solid #000; /* Adding border */
+    width: 80vw; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+  /* Left section (text) */
+.left-section {
+    width: 50%;
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+  /* Right section (image) */
+.right-section img {
+    width: 100%;  /* Adjust width as needed */
+    max-width: 500px; /* Optional: Limit the maximum width of the image */
+    height: auto;
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px green;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+  /* Keyframe animation to slide the section up */
+@keyframes slideUp {
+    0% {
+    transform: translateY(50px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+  /* Adding scroll effect */
+.main-section.scrolled {
+    animation: slideUp 1s forwards;
+}
+
+
+
