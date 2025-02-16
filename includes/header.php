@@ -30,7 +30,13 @@
             <ul class="main-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li class="submenu"><a href="services.php">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="services.php#art">Art</a></li>
+                        <li><a href="services.php#craft">Craft</a></li>
+                        <li><a href="services.php#Design">Design</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
@@ -39,7 +45,8 @@
             <ul class="main-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li class="submenu"><a href="services.php">Services</a>
+                </li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>

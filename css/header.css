@@ -38,6 +38,7 @@ header{
 .logo img{
     width: 30px;
     margin-right: 20px;
+    border-radius: 20%;
 }
 
 #mobile-menu{
@@ -48,4 +49,31 @@ header{
     color: white;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.submenu{
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+}
+
+.dropdown li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown li{
+    list-style: none;
+}
+
+.submenu:hover .dropdown{
+    display: block;
+    position: absolute;
 }
