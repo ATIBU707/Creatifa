@@ -3,8 +3,8 @@
 
 <main>
     <!-- Page content starts here -->
-    <h1>services</h1>
-
+    <h1>Craft</h1>
+ 
 </main>
 
 <!-- include footer.php -->

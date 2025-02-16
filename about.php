@@ -3,6 +3,7 @@
 
 <main>
     <!-- Page content starts here -->
+    <h1>About</h1>
 
 </main>
 

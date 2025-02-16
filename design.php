@@ -3,7 +3,7 @@
 
 <main>
     <!-- Page content starts here -->
-    <h1>services</h1>
+     <h1>Design</h1>
 
 </main>
 

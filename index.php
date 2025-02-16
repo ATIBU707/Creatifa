@@ -4,6 +4,7 @@
 
 <main>
     <!-- Page content starts here -->
+    <h1>Home</h1>
 
 
     <!-- starting of slideshow -->

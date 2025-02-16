@@ -32,9 +32,9 @@
                 <li><a href="about.php">About</a></li>
                 <li class="submenu"><a href="services.php">Services</a>
                     <ul class="dropdown">
-                        <li><a href="services.php#art">Art</a></li>
-                        <li><a href="services.php#craft">Craft</a></li>
-                        <li><a href="services.php#Design">Design</a></li>
+                        <li><a href="art.php">Art</a></li>
+                        <li><a href="craft.php">Craft</a></li>
+                        <li><a href="design.php">Design</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact</a></li>

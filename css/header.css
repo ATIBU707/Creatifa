@@ -30,6 +30,10 @@ header{
     list-style: none;
 }
 
+.main-menu a:hover{
+    border-bottom: solid white 3px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -76,4 +80,8 @@ header{
 .submenu:hover .dropdown{
     display: block;
     position: absolute;
+}
+
+.dropdown li a:hover{
+    border-bottom: solid snow 3px;
 }
