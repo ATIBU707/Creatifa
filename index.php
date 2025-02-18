@@ -4,8 +4,6 @@
 
 <main>
     <!-- Page content starts here -->
-    <h1>Home</h1>
-
 
     <!-- starting of slideshow -->
     <div class="mySlides fade">
@@ -30,7 +28,7 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-
+     <br>
     <h1 id="welcome">Welcome to Creatifa</h1>
 
     <!-- Main Section -->
@@ -50,6 +48,15 @@
         <img src="images/basket.jpg" alt="Image description">
         </div>
     </section>
+
+    <!-- Side left-section-->
+    <div id="side">
+    <a href="#" id="We">We</a>
+    <a href="#" id="deal">Deal In</a>
+    <a href="#" id="art">Art</a>
+    <a href="#" id="craft">Craft</a>
+    <a href="#" id="sculpture"> Sculpture</a>
+</div>
 
 </main>
 

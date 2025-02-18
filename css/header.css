@@ -9,8 +9,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgb(100, 75, 75);
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 #main{
@@ -62,7 +66,7 @@ header{
 .dropdown{
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: rgb(100, 75, 75);
     z-index: 1;
 }
 

@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="footer-column">
             <h3>About Us</h3>
-            <p>Learn more about our company</p>
+            <p>More about our company</p>
             <p>Our Vision</p>
             <p>Our Mission</p>
             <p>Our values</p>
@@ -13,6 +13,14 @@
                 <li><a href="#">Craft Design</a></li>
                 <li><a href="#">Art Design</a></li>
                 <li><a href="#">Delivery Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Partner</h3>
+            <ul>
+                <li><a href="#">Sell Your Content</a></li>
+                <li><a href="#">Affilate/Seller</a></li>
+                <li><a href="#">Rights and Clearance</a></li>
             </ul>
         </div>
         <div class="footer-column">
