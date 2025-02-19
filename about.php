@@ -21,7 +21,7 @@
         </div>
      </div>
     <!-- Message Icon Section -->
-    <div class="message-icon" style=""></div>
+    <div class="message-icon"></div>
         <i class="fas fa-envelope" style="color: red; font-size: large; position: fixed; right: 0; top: 50%; padding: 5px;"></i>
     </div>
     </a>
