@@ -43,14 +43,17 @@
         </nav>
         <nav id="mobile-menu">
             <ul class="main-menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li class="submenu"><a href="services.php">Services</a>
-                </li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li class="submenu"><a href="services.php">Services</a>
+            </li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </header>
+    <div class="icon-message">
+        <i class="fas fa-info-circle"></i> Welcome to Creatifa!
+    </div>
     <!-- Page content starts here -->
 

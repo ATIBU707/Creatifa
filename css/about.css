@@ -1,0 +1,58 @@
+/* About Section */
+
+/* weclome section */
+#welcome{
+    color:rgb(100, 75, 75) ;
+    text-align: center;
+}
+
+.imgabt{
+    width: 100%;
+    text-align: center;
+    justify-content:space-between;
+    padding-left: 150px;
+}
+
+.Uganda{
+    padding-left: 20px;
+    width: 80%;
+    margin: 50px;
+    text-align: justify;
+    justify-content:space-between;
+    font-size: 18px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.vision {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(100, 75, 75);
+    border-radius: 10%;
+}
+
+.mission {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(100, 75, 75);
+    border-radius: 10%;
+}
+
+.values {
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(100, 75, 75);
+    border-radius: 10%;
+}
