@@ -6,6 +6,27 @@
     text-align: center;
 }
 
+/*message section*/
+.message{
+    display: none;
+}
+
+.message li{
+    list-style: none;
+    border-radius: 10px;
+}
+
+.fas:hover{
+    color: rgb(247, 247, 207);
+}
+.fa-comment-alt:hover .message {
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .imgabt{
     width: 100%;
     text-align: center;

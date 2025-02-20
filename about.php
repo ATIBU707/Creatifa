@@ -22,7 +22,30 @@
      </div>
     <!-- Message Icon Section -->
     <div class="message-icon"></div>
-        <i class="fas fa-envelope" style="color: red; font-size: large; position: fixed; right: 0; top: 50%; padding: 5px;"></i>
+        <i class="fas fa-comment-alt" style="color: rgb(216, 216, 95);; font-size: 25px; position: fixed; right: 0; top: 50%; padding: 5px;">
+        <ul class="message">
+        <li>
+            <a href="https://wa.me/0751062375" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 24px; color: rgb(216, 216, 95);"></i>
+            </a>
+        </li>
+            <li>
+                <a href="https://facebook.com/Creatifa Business" target="_blank">
+                    <i class="fab fa-facebook" style="font-size: 24px; color: rgb(216, 216, 95);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/yourprofile" target="_blank">
+                    <i class="fab fa-twitter" style="font-size: 24px; color: rgb(216, 216, 95);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://mail.google.com/mail/creatifa@gmail.com">
+                    <i class="fas fa-envelope" style="font-size: 24px; color: rgb(216, 216, 95);"></i>
+                </a>
+            </li>
+        </ul>
+        </i>
     </div>
     </a>
 
